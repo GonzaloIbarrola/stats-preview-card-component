@@ -1,0 +1,29 @@
+@tailwind base;
+  @layer base{
+    body {
+      @apply bg-VeryDarkBlue flex w-screen h-screen justify-center items-center
+    }
+    main {
+      @apply overflow-hidden bg-DarkDesaturatedBlue w-[327px] h-[780px] xl:flex rounded-lg xl:w-[1110px] xl:h-[446px] xl:flex-row-reverse
+    }
+    h1 {
+      @apply font-bold text-[28px] text-White mb-4 leading-[32px] xl:text-[36px] xl:leading-[44px]
+    }
+    h2 {
+      @apply text-2xl font-bold text-White leading-[29px]
+    }
+    span {
+      @apply text-SoftViolet
+    }
+    p {
+      @apply text-SlightlyTransparentWhite/75 text-[15px] leading-[25px] 
+    }
+    li>p {
+      @apply uppercase text-xs tracking-[1px] leading-[25px] font-sans-serif text-SlightlyTransparentWhite/60
+    }
+    ul {
+      @apply flex flex-col xl:flex-row gap-6 xl:gap-[60px] text-center xl:text-left
+    }
+  }
+@tailwind components;
+@tailwind utilities;
